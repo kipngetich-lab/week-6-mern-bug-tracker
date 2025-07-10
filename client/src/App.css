@@ -1,0 +1,132 @@
+/* Basic styling for the application */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.app-content {
+  display: flex;
+  gap: 40px;
+}
+
+.form-section {
+  flex: 1;
+  max-width: 400px;
+}
+
+.list-section {
+  flex: 2;
+}
+
+.loading, .error {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.loading {
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+/* Form styles */
+.bug-form {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.bug-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.bug-form input,
+.bug-form textarea,
+.bug-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.bug-form button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bug-form button:hover {
+  background: #388e3c;
+}
+
+/* Bug list styles */
+.bug-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bug-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.bug-item h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.bug-item p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.bug-item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bug-item select {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.bug-item button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bug-item button:hover {
+  background: #d32f2f;
+}
+
+/* Status indicators */
+.bug-item.open {
+  border-left: 4px solid #ff9800;
+}
+
+.bug-item.in-progress {
+  border-left: 4px solid #2196f3;
+}
+
+.bug-item.resolved {
+  border-left: 4px solid #4caf50;
+}
