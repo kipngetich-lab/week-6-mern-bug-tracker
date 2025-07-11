@@ -35,6 +35,7 @@ Backend:
 
 # Project Structure
 
+```text
 mern-bug-tracker/
 ├── client/                 # React frontend
 │   ├── src/
@@ -53,3 +54,4 @@ mern-bug-tracker/
 │   └── tests/             # Backend tests
 │
 └── README.md              # This file
+```
